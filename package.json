@@ -1,0 +1,21 @@
+{
+  "name": "alpha-residential",
+  "version": "1.0.0",
+  "description": "This is an information website for Brandon Vickery's handyman business.",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "server": "nodemon server.js"
+  },
+  "author": "Michael Amore",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.14.0",
+    "express-handlebars": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "3.9.0",
+    "gulp-sass": "^2.3.2",
+    "nodemon": "^1.11.0"
+  }
+}
