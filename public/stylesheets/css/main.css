@@ -1,15 +1,15 @@
 body {
   margin-bottom: 60px; }
 
-.navbar {
+.header {
   min-height: 80px;
   border-radius: 0; }
-  .navbar .navbar-brand-logo {
+  .header .navbar-brand-logo {
     float: left; }
-  .navbar .navbar-brand {
+  .header .navbar-brand {
     height: 80px;
     padding: 30px; }
-  .navbar .navbar-nav > li > a {
+  .header .navbar-nav > li > a {
     padding: 30px; }
 
 .footer {
