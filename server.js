@@ -1,6 +1,7 @@
 // Dependencis
 var express = require('express');
 var exphbs  = require('express-handlebars');
+var path = require('path');
 
 
 
@@ -12,7 +13,7 @@ var app = express();
 // Application configuration
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
-app.use(express.static('public'));
+app.use(express.static( path.resolve(__dirname, 'public') ));
 
 
 
@@ -27,6 +28,14 @@ app.get('/services', function(req, res) {
 
 app.get('/about', function(req, res) {
 	res.render('about');
+});
+
+app.get('/testimonials', function(req, res) {
+	res.render('testimonials');
+});
+
+app.get('/contact', function(req, res) {
+	res.render('contact');
 });
 
 
